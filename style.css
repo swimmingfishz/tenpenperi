@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面整体 */
+[id="L3482832595"].page {
+    min-height: var(--viewport-height, 100vh);
+    width: 100%;
+    position: relative;
+}
+
+[id="L3482832595"] .backdrop {
+    /* 预留背景层 */
+}
+
+[id="L3482832595"] .page-content {
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+[id="L3482832595"] .page-layout {
+    width: 100%;
+}
+
+/* 自由摆放容器 */
+.freeform-container {
+    position: relative;
+    width: 100%;
+    min-height: 120vh;
+}
+
+/* 绝对定位的图片 */
+.freeform-img {
+    position: absolute;
+    height: auto;
+    display: block;
+}
+
+/* 带链接的图片容器 */
+.freeform-link {
+    position: absolute;
+    display: block;
+}
+
+.freeform-link img {
+    height: auto;
+}
+
+/* 移动端适配 */
+.mobile [id="L3482832595"] .backdrop,
+.mobile [id="L3482832595"] .page-layout {
+    /* 按需添加 */
+}
+.flying-object {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    ...
+}

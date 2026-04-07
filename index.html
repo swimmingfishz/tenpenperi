@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=yes">
+    <title>Happy Birthday!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;  /* 换成你的背景色或背景图 */
+            min-height: 100vh;
+        }
+
+        /* 自由摆放容器 */
+        .freeform-container {
+            position: relative;
+            width: 100%;
+            /* 高度根据原网页比例，给足够空间 */
+            min-height: 1500px;
+            background-color: #f5f5f5;  /* 换成你的背景 */
+        }
+
+        /* 所有绝对定位的图片 */
+        .freeform-img {
+            position: absolute;
+            display: block;
+            height: auto;
+        }
+
+        /* 带链接的图片容器 */
+        .freeform-link {
+            position: absolute;
+            display: block;
+        }
+        .freeform-link img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="freeform-container">
+        
+        <!-- 图片1: 0000.png -->
+        <!-- freeform-x: 39.78, freeform-y: 0, scale: 17.90, z: 2 -->
+        <img class="freeform-img" src="images/0000.png" alt="0000" 
+             style="left: 39.78%; top: 0%; width: 17.90%; z-index: 2;">
+        
+        <!-- 图片2: 00.png -->
+        <!-- freeform-x: 14.54, freeform-y: 23.73, scale: 73.96, z: 1 -->
+        <img class="freeform-img" src="images/00.png" alt="00" 
+             style="left: 14.54%; top: 23.73%; width: 73.96%; z-index: 1;">
+        
+        <!-- 图片3: 0.png -->
+        <!-- freeform-x: 36.15, freeform-y: 36.35, scale: 22.70, z: 3 -->
+        <img class="freeform-img" src="images/0.png" alt="0" 
+             style="left: 36.15%; top: 36.35%; width: 22.70%; z-index: 3;">
+        
+        <!-- 图片4: 1.png（带超链接，跳转到 12月/） -->
+        <!-- freeform-x: 59.69, freeform-y: 40.38, scale: 10.40, z: 4 -->
+        <a href="December/index.html" class="freeform-link" 
+           style="left: 59.69%; top: 40.38%; width: 10.40%; z-index: 4;">
+            <img src="images/1.png" alt="1">
+        </a>
+        
+        <!-- 图片5: 2.png -->
+        <!-- freeform-x: 29.85, freeform-y: 51.34, scale: 6.30, z: 5 -->
+        <img class="freeform-img" src="images/2.png" alt="2" 
+             style="left: 29.85%; top: 51.34%; width: 6.30%; z-index: 5;">
+        
+        <!-- 图片6: 3.png -->
+        <!-- freeform-x: 55.31, freeform-y: 66.96, scale: 7.60, z: 6 -->
+        <img class="freeform-img" src="images/3.png" alt="3" 
+             style="left: 55.31%; top: 66.96%; width: 7.60%; z-index: 6;">
+        
+        <!-- 图片7: 4.png -->
+        <!-- freeform-x: 38.65, freeform-y: 81.49, scale: 7.30, z: 7 -->
+        <img class="freeform-img" src="images/4.png" alt="4" 
+             style="left: 38.65%; top: 81.49%; width: 7.30%; z-index: 7;">
+        
+    </div>
+</body>
+</html>
