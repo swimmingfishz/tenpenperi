@@ -68,6 +68,7 @@
         .flying-object {
             position: fixed;
             z-index: 1000;
+            /* 面积放大4倍 = 宽度放大2倍 (从80px变为320px) 
             width: 160px; 
             top: 10%;
             left: 10%;
@@ -81,7 +82,7 @@
             width: 100%;
             height: auto;
             display: block;
-             
+             内层处理自转 
             animation: flyRotate 6s linear infinite;
         }
 
@@ -89,9 +90,9 @@
         @keyframes flyRotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
-        }
+/*        }
 
-        
+        /* 大范围全屏飞行动画 */
         @keyframes bounceFull {
             0% { transform: translate(0, 0); }
             25% { transform: translate(60vw, 10vh); }
@@ -100,7 +101,7 @@
             100% { transform: translate(0, 0); }
         }
 
-         
+        /* 返回主页链接 */
         .back-link {
             position: fixed;
             top: 20px;
